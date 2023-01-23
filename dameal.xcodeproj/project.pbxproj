@@ -39,6 +39,8 @@
 		D7935D82297CF2E700FB5AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7935D81297CF2E700FB5AB1 /* Assets.xcassets */; };
 		D7935D85297CF2E700FB5AB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7935D84297CF2E700FB5AB1 /* Preview Assets.xcassets */; };
 		D7D3F0BB297EFD6700D5283F /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3F0BA297EFD6700D5283F /* View+Ext.swift */; };
+		D7EFAD5E297F056400EF1E30 /* MealEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD5D297F056400EF1E30 /* MealEntity.swift */; };
+		D7EFAD60297F058B00EF1E30 /* LocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD5F297F058B00EF1E30 /* LocaleDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		D7935D81297CF2E700FB5AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7935D84297CF2E700FB5AB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D7D3F0BA297EFD6700D5283F /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		D7EFAD5D297F056400EF1E30 /* MealEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealEntity.swift; sourceTree = "<group>"; };
+		D7EFAD5F297F058B00EF1E30 /* LocaleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,7 @@
 		D7714D77297D3F04004594ED /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D7EFAD5B297F054700EF1E30 /* Locale */,
 				D74B3FB9297D758D00B596D0 /* Remote */,
 				D74B3FBA297D760400B596D0 /* MealRepository.swift */,
 			);
@@ -354,6 +359,23 @@
 			path = Favorite;
 			sourceTree = "<group>";
 		};
+		D7EFAD5B297F054700EF1E30 /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				D7EFAD5C297F055800EF1E30 /* Entity */,
+				D7EFAD5F297F058B00EF1E30 /* LocaleDataSource.swift */,
+			);
+			path = Locale;
+			sourceTree = "<group>";
+		};
+		D7EFAD5C297F055800EF1E30 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D7EFAD5D297F056400EF1E30 /* MealEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -467,8 +489,10 @@
 				D7714D67297D3D1F004594ED /* ActivityIndicator.swift in Sources */,
 				D7D3F0BB297EFD6700D5283F /* View+Ext.swift in Sources */,
 				D7714D6B297D3E82004594ED /* HomeRouter.swift in Sources */,
+				D7EFAD5E297F056400EF1E30 /* MealEntity.swift in Sources */,
 				D74B3FCA297E25B300B596D0 /* MealMapper.swift in Sources */,
 				D7714D71297D3EA0004594ED /* DetailRouter.swift in Sources */,
+				D7EFAD60297F058B00EF1E30 /* LocaleDataSource.swift in Sources */,
 				D7935D80297CF2E500FB5AB1 /* ContentView.swift in Sources */,
 				D73C7C38297EBC6B00EC450A /* AppBackground.swift in Sources */,
 				D74B3FC2297D776A00B596D0 /* MealsResponse.swift in Sources */,
