@@ -33,7 +33,6 @@
 		D7714D6B297D3E82004594ED /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7714D6A297D3E82004594ED /* HomeRouter.swift */; };
 		D7714D6D297D3E91004594ED /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7714D6C297D3E91004594ED /* DetailView.swift */; };
 		D7714D6F297D3E98004594ED /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7714D6E297D3E98004594ED /* DetailPresenter.swift */; };
-		D7714D71297D3EA0004594ED /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7714D70297D3EA0004594ED /* DetailRouter.swift */; };
 		D7935D7E297CF2E500FB5AB1 /* DamealApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7935D7D297CF2E500FB5AB1 /* DamealApp.swift */; };
 		D7935D80297CF2E500FB5AB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7935D7F297CF2E500FB5AB1 /* ContentView.swift */; };
 		D7935D82297CF2E700FB5AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7935D81297CF2E700FB5AB1 /* Assets.xcassets */; };
@@ -71,7 +70,6 @@
 		D7714D6A297D3E82004594ED /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		D7714D6C297D3E91004594ED /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D7714D6E297D3E98004594ED /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
-		D7714D70297D3EA0004594ED /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		D7935D7A297CF2E500FB5AB1 /* dameal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dameal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7935D7D297CF2E500FB5AB1 /* DamealApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamealApp.swift; sourceTree = "<group>"; };
 		D7935D7F297CF2E500FB5AB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -192,14 +190,6 @@
 				D74B3FC9297E25B300B596D0 /* MealMapper.swift */,
 			);
 			path = Mapper;
-			sourceTree = "<group>";
-		};
-		D7714D72297D3EA4004594ED /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				D7714D70297D3EA0004594ED /* DetailRouter.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		D7714D73297D3EA8004594ED /* Presenter */ = {
@@ -353,7 +343,6 @@
 			children = (
 				D7714D74297D3EB0004594ED /* View */,
 				D7714D73297D3EA8004594ED /* Presenter */,
-				D7714D72297D3EA4004594ED /* Router */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -543,7 +532,6 @@
 				D7714D6B297D3E82004594ED /* HomeRouter.swift in Sources */,
 				D7EFAD5E297F056400EF1E30 /* MealEntity.swift in Sources */,
 				D74B3FCA297E25B300B596D0 /* MealMapper.swift in Sources */,
-				D7714D71297D3EA0004594ED /* DetailRouter.swift in Sources */,
 				D7EFAD60297F058B00EF1E30 /* LocaleDataSource.swift in Sources */,
 				D7935D80297CF2E500FB5AB1 /* ContentView.swift in Sources */,
 				D73C7C38297EBC6B00EC450A /* AppBackground.swift in Sources */,
