@@ -12,21 +12,20 @@ import Combine
 protocol LocaleDataSourceProtocol: AnyObject {
     func getMeals() -> AnyPublisher<[MealEntity], Error>
     func getMeal(by mealId: String) -> AnyPublisher<MealEntity, Error>
-    
-    func addMeals(from meals: [MealEntity]) -> AnyPublisher<Bool, Error>
-    func updateMeal(by mealId: String, meal: MealåEntity) -> AnyPublisher<Bool, Error>
-    
     //    func getFavoriteMeals() -> AnyPublisher<[MealEntity], Error>
-    //    func updateFavoriteMeal(by mealId: String) -> AnyPublisher<MealEntity, Error>
+
+    func addMeals(from meals: [MealEntity]) -> AnyPublisher<Bool, Error>
+    func updateMeal(by mealId: String, meal: MealEntity) -> AnyPublisher<Bool, Error>
+    func toggleFavoriteMeal(by mealId: String) -> AnyPublisher<MealEntity, Error>
 }
 
 final class LocaleDataSource: NSObject {
     private let realm: Realm?
-    
+
     private init(realm: Realm?) {
         self.realm = realm
     }
-    
+
     static let sharedInstance: LocaleDataSource = {
         let realm = try? Realm()
         return LocaleDataSource(realm: realm)
@@ -47,7 +46,7 @@ extension LocaleDataSource: LocaleDataSourceProtocol {
             }
         }.eraseToAnyPublisher()
     }
-    
+
     func getMeal(by mealId: String) -> AnyPublisher<MealEntity, Error> {
         return Future<MealEntity, Error> { completion in
             if let realm = self.realm {
@@ -65,7 +64,7 @@ extension LocaleDataSource: LocaleDataSourceProtocol {
             }
         }.eraseToAnyPublisher()
     }
-    
+
     func addMeals(from meals: [MealEntity]) -> AnyPublisher<Bool, Error> {
         return Future<Bool, Error> { completion in
             if let realm = self.realm {
@@ -84,7 +83,7 @@ extension LocaleDataSource: LocaleDataSourceProtocol {
             }
         }.eraseToAnyPublisher()
     }
-    
+
     func updateMeal(by mealId: String, meal: MealEntity) -> AnyPublisher<Bool, Error> {
         return Future<Bool, Error> { completion in
             if let realm = self.realm, let mealEntity = {
@@ -102,6 +101,25 @@ extension LocaleDataSource: LocaleDataSourceProtocol {
                         mealEntity.setValue(meal.category, forKey: "category")
                     }
                     completion(.success(true))
+                } catch {
+                    completion(.failure(DatabaseError.requestFailed))
+                }
+            } else {
+                completion(.failure(DatabaseError.invalidInstance))
+            }
+        }.eraseToAnyPublisher()
+    }
+
+    func toggleFavoriteMeal(by mealId: String) -> AnyPublisher<MealEntity, Error> {
+        return Future<MealEntity, Error> { completion in
+            if let realm = self.realm, let mealEntity = {
+                realm.objects(MealEntity.self).filter("id = '\(mealId)'")
+            }().first {
+                do {
+                    try realm.write {
+                        mealEntity.setValue(!mealEntity.favorite, forKey: "favorite")
+                    }
+                    completion(.success(mealEntity))
                 } catch {
                     completion(.failure(DatabaseError.requestFailed))
                 }

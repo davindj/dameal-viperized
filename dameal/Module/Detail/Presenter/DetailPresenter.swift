@@ -40,4 +40,20 @@ class DetailPresenter: ObservableObject {
             })
             .store(in: &cancellables)
     }
+
+    func toggleFavoriteMeal() {
+        detailUseCase.toggleFavoriteMeal()
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .failure:
+                    self.errorMessage = String(describing: completion)
+                case .finished:
+                    self.isLoading = false
+                }
+            }, receiveValue: { meal in
+                self.meal = meal
+            })
+            .store(in: &cancellables)
+    }
 }

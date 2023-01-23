@@ -11,17 +11,18 @@ import Combine
 protocol MealRepositoryProtocol {
     func getMeals() -> AnyPublisher<[MealModel], Error>
     func getMeal(mealId: String) -> AnyPublisher<MealModel, Error>
+    func toggleFavoriteMeal(mealId: String) -> AnyPublisher<MealModel, Error>
 }
 
 final class MealRepository: NSObject {
     fileprivate let locale: LocaleDataSourceProtocol
     fileprivate let remote: RemoteDataSourceProtocol
-    
+
     private init(locale: LocaleDataSourceProtocol, remote: RemoteDataSourceProtocol) {
         self.locale = locale
         self.remote = remote
     }
-    
+
     static let sharedInstance: MealRepository = {
         let localeDataSource = LocaleDataSource.sharedInstance
         let remoteDataSource = RemoteDataSource.sharedInstance
@@ -53,7 +54,7 @@ extension MealRepository: MealRepositoryProtocol {
             }
             .eraseToAnyPublisher()
     }
-    
+
     func getMeal(mealId: String) -> AnyPublisher<MealModel, Error> {
         return self.locale.getMeal(by: mealId)
             .flatMap { result -> AnyPublisher<MealModel, Error> in
@@ -72,5 +73,11 @@ extension MealRepository: MealRepositoryProtocol {
                         .eraseToAnyPublisher()
                 }
             }.eraseToAnyPublisher()
+    }
+
+    func toggleFavoriteMeal(mealId: String) -> AnyPublisher<MealModel, Error> {
+        return self.locale.toggleFavoriteMeal(by: mealId)
+            .map { MealMapper.mapMealEntityToDomain(input: $0) }
+            .eraseToAnyPublisher()
     }
 }

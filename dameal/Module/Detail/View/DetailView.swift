@@ -63,7 +63,8 @@ extension DetailView {
                 Spacer()
                 Image(systemName: "heart.fill")
                     .font(.system(size: 28))
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(meal.favorite ? Color.red : Color.gray)
+                    .onTapGesture { self.presenter.toggleFavoriteMeal() }
             }
             Text("\(meal.category); \(meal.area)")
             Text(meal.tag)

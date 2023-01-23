@@ -19,7 +19,7 @@ final class MealMapper {
             return newMeal
         }
     }
-    
+
     static func mapMealResponseToEntity(
         input mealResponse: MealResponse
     ) -> MealEntity {
@@ -35,7 +35,7 @@ final class MealMapper {
             mealResponse.ingredient17, mealResponse.ingredient18,
             mealResponse.ingredient19, mealResponse.ingredient20
         ].compactMap { $0 }.filter { $0 != "" }
-        
+
         let measures = [
             mealResponse.measure1, mealResponse.measure2,
             mealResponse.measure3, mealResponse.measure4,
@@ -48,11 +48,11 @@ final class MealMapper {
             mealResponse.measure17, mealResponse.measure18,
             mealResponse.measure19, mealResponse.measure20
         ].compactMap { $0 }.filter { $0 != "" }
-        
+
         let ingredients = zip(ingredientNames, measures)
             .map { "\($0) \($1)" }
             .joined(separator: "\n")
-        
+
         let mealEntity = MealEntity()
         mealEntity.id = mealResponse.id
         mealEntity.title = mealResponse.title
@@ -65,16 +65,16 @@ final class MealMapper {
         mealEntity.source = mealResponse.source ?? "-"
         mealEntity.ingredients = ingredients
         mealEntity.favorite = false
-        
+
         return mealEntity
     }
-    
+
     static func mapMealEntitiesToDomains (
         input mealEntities: [MealEntity]
     ) -> [MealModel] {
         return mealEntities.map { mapMealEntityToDomain(input: $0) }
     }
-    
+
     static func mapMealEntityToDomain(
         input mealEntity: MealEntity
     ) -> MealModel {

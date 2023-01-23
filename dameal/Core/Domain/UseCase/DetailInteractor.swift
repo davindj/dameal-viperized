@@ -10,6 +10,7 @@ import Combine
 protocol DetailUseCase {
     func getMeal() -> AnyPublisher<MealModel, Error>
     func getMeal() -> MealModel
+    func toggleFavoriteMeal() -> AnyPublisher<MealModel, Error>
 }
 
 class DetailInteractor {
@@ -28,5 +29,8 @@ extension DetailInteractor: DetailUseCase {
     }
     func getMeal() -> MealModel {
         return meal
+    }
+    func toggleFavoriteMeal() -> AnyPublisher<MealModel, Error> {
+        return repository.toggleFavoriteMeal(mealId: meal.id)
     }
 }
