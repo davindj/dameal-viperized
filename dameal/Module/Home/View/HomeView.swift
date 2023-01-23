@@ -23,9 +23,7 @@ struct HomeView: View {
                 content
             }
         }.onAppear {
-            if self.presenter.meals.isEmpty {
-                self.presenter.getMeals()
-            }
+            self.presenter.getMeals()
         }.navigationBarTitle(
             Text("Home"),
             displayMode: .automatic
