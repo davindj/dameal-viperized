@@ -16,7 +16,7 @@ protocol RemoteDataSourceProtocol: AnyObject {
 
 final class RemoteDataSource: NSObject {
     private override init() { }
-
+    
     static let sharedInstance: RemoteDataSource = RemoteDataSource()
 }
 
@@ -37,7 +37,7 @@ extension RemoteDataSource: RemoteDataSourceProtocol {
             }
         }.eraseToAnyPublisher()
     }
-
+    
     func getMeal(mealId: String) -> AnyPublisher<MealResponse, Error> {
         return Future<MealResponse, Error> { completion in
             if let url = URL(string: Endpoints.Gets.meal.url) {

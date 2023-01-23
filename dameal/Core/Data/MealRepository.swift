@@ -16,12 +16,12 @@ protocol MealRepositoryProtocol {
 final class MealRepository: NSObject {
     fileprivate let locale: LocaleDataSourceProtocol
     fileprivate let remote: RemoteDataSourceProtocol
-
+    
     private init(locale: LocaleDataSourceProtocol, remote: RemoteDataSourceProtocol) {
         self.locale = locale
         self.remote = remote
     }
-
+    
     static let sharedInstance: MealRepository = {
         let localeDataSource = LocaleDataSource.sharedInstance
         let remoteDataSource = RemoteDataSource.sharedInstance
@@ -43,10 +43,9 @@ extension MealRepository: MealRepositoryProtocol {
                         .flatMap { self.locale.addMeals(from: $0) }
                         .filter { $0 }
                         .flatMap { _ in self.locale.getMeals()
-                            .map { MealMapper.mapMealEntitiesToDomains(input: $0) }
+                                .map { MealMapper.mapMealEntitiesToDomains(input: $0) }
                         }.eraseToAnyPublisher()
                 } else {
-                    print("from locale letsgo")
                     return self.locale.getMeals()
                         .map { MealMapper.mapMealEntitiesToDomains(input: $0) }
                         .eraseToAnyPublisher()
@@ -54,10 +53,24 @@ extension MealRepository: MealRepositoryProtocol {
             }
             .eraseToAnyPublisher()
     }
-
+    
     func getMeal(mealId: String) -> AnyPublisher<MealModel, Error> {
-        return self.remote.getMeal(mealId: mealId)
-            .map { MealMapper.mapMealResponseToDomain(input: $0) }
-            .eraseToAnyPublisher()
+        return self.locale.getMeal(by: mealId)
+            .flatMap { result -> AnyPublisher<MealModel, Error> in
+                if result.category.isEmpty {
+                    return self.remote.getMeal(mealId: mealId)
+                        .map { MealMapper.mapMealResponseToEntity(input: $0) }
+                        .catch { _ in self.locale.getMeal(by: mealId) }
+                        .flatMap { self.locale.updateMeal(by: mealId, meal: $0) }
+                        .filter { $0 }
+                        .flatMap { _ in self.locale.getMeal(by: mealId)
+                                .map { MealMapper.mapMealEntityToDomain(input: $0) }
+                        }.eraseToAnyPublisher()
+                } else {
+                    return self.locale.getMeal(by: mealId)
+                        .map { MealMapper.mapMealEntityToDomain(input: $0) }
+                        .eraseToAnyPublisher()
+                }
+            }.eraseToAnyPublisher()
     }
 }
