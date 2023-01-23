@@ -16,7 +16,7 @@ struct HomeView: View {
                 loadingIndicator
             } else if presenter.isError {
                 errorIndicator
-            } else if presenter.meals.isEmpty || true {
+            } else if presenter.meals.isEmpty {
                 emptyMeals
             } else {
                 content

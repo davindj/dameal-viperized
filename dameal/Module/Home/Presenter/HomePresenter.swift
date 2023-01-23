@@ -50,5 +50,4 @@ class HomePresenter: ObservableObject {
     NavigationLink(
       destination: router.makeDetailView(for: meal)) { content() }
   }
-
 }
