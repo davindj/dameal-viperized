@@ -18,12 +18,12 @@ struct ContentView: View {
                 TabItem(imageName: "house", title: "Home")
             }
             NavigationView {
-                DetailView()
+                Text("Favorite Page")
             }.tabItem {
                 TabItem(imageName: "heart", title: "Favorite")
             }
             NavigationView {
-                DetailView()
+                Text("About Page")
             }.tabItem {
                 TabItem(imageName: "person.crop.circle", title: "about")
             }

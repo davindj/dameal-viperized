@@ -10,8 +10,8 @@ import SwiftUI
 
 class HomeRouter {
     func makeDetailView(for meal: MealModel) -> some View {
-//        let detailUseCase = Injection.init().provideDetail(category: category)
-//        let presenter = DetailPresenter(detailUseCase: detailUseCase)
-        return DetailView()
+        let detailUseCase = Injection.sharedInstance.resolve(DetailUseCase.self, argument: meal)!
+        let presenter = DetailPresenter(detailUseCase: detailUseCase)
+        return DetailView(presenter: presenter)
     }
 }

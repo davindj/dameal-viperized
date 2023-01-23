@@ -16,6 +16,12 @@ final class Injection: NSObject {
         container.register(HomeUseCase.self) { r in
             HomeInteractor(repository: r.resolve(MealRepositoryProtocol.self)!)
         }
+        container.register(DetailUseCase.self) { r, meal in
+            DetailInteractor(
+                repository: r.resolve(MealRepositoryProtocol.self)!,
+                meal: meal
+            )
+        }
 
         return container
     }()
