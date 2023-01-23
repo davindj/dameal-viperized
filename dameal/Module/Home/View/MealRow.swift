@@ -10,7 +10,7 @@ import SDWebImageSwiftUI
 
 struct MealRow: View {
     var meal: MealModel
-    
+
     var body: some View {
         HStack(alignment: .center) {
             WebImage(url: URL(string: meal.image))
@@ -47,14 +47,14 @@ struct MealRow_Previews: PreviewProvider {
             image: "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg",
             favorite: true
         )
-        
+
         let longTitleMeal = MealModel(
             id: "123456",
             title: "Beef and Oyster pie",
             image: "https://www.themealdb.com/images/media/meals/wrssvt1511556563.jpg",
             favorite: false
         )
-        
+
         return ZStack {
             AppBackground()
             VStack {

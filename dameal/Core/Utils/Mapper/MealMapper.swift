@@ -57,12 +57,12 @@ final class MealMapper {
             id: mealResponse.id,
             title: mealResponse.title,
             image: mealResponse.image,
-            category: mealResponse.category ?? "Unknow",
-            area: mealResponse.area ?? "Unknow",
-            instructions: mealResponse.instructions ?? "Unknow",
-            tag: mealResponse.tag ?? "Unknow",
-            youtube: mealResponse.youtube ?? "Unknow",
-            source: mealResponse.source ?? "Unknow",
+            category: mealResponse.category ?? "-",
+            area: mealResponse.area ?? "-",
+            instructions: mealResponse.instructions ?? "",
+            tag: mealResponse.tag ?? "",
+            youtube: mealResponse.youtube ?? "-",
+            source: mealResponse.source ?? "-",
             ingredients: ingredients,
             favorite: false
         )

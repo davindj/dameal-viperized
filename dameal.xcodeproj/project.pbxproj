@@ -38,6 +38,7 @@
 		D7935D80297CF2E500FB5AB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7935D7F297CF2E500FB5AB1 /* ContentView.swift */; };
 		D7935D82297CF2E700FB5AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7935D81297CF2E700FB5AB1 /* Assets.xcassets */; };
 		D7935D85297CF2E700FB5AB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7935D84297CF2E700FB5AB1 /* Preview Assets.xcassets */; };
+		D7D3F0BB297EFD6700D5283F /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3F0BA297EFD6700D5283F /* View+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		D7935D7F297CF2E500FB5AB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D7935D81297CF2E700FB5AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7935D84297CF2E700FB5AB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7D3F0BA297EFD6700D5283F /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			children = (
 				D74B3FC4297D795100B596D0 /* CustomError+Ext.swift */,
 				D73C7C35297EB2D500EC450A /* Color+Ext.swift */,
+				D7D3F0BA297EFD6700D5283F /* View+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				D7714D6F297D3E98004594ED /* DetailPresenter.swift in Sources */,
 				D74B3FB7297D472700B596D0 /* APIEndpoint.swift in Sources */,
 				D7714D67297D3D1F004594ED /* ActivityIndicator.swift in Sources */,
+				D7D3F0BB297EFD6700D5283F /* View+Ext.swift in Sources */,
 				D7714D6B297D3E82004594ED /* HomeRouter.swift in Sources */,
 				D74B3FCA297E25B300B596D0 /* MealMapper.swift in Sources */,
 				D7714D71297D3EA0004594ED /* DetailRouter.swift in Sources */,
