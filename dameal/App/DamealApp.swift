@@ -15,6 +15,9 @@ struct DamealApp: App {
                 .environmentObject(
                     HomePresenter(homeUseCase: Injection.sharedInstance.resolve(HomeUseCase.self)!)
                 )
+                .environmentObject(
+                    FavoritePresenter(favoriteUseCase: Injection.sharedInstance.resolve(FavoriteUseCase.self)!)
+                )
         }
     }
 }

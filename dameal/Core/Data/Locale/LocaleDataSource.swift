@@ -12,7 +12,7 @@ import Combine
 protocol LocaleDataSourceProtocol: AnyObject {
     func getMeals() -> AnyPublisher<[MealEntity], Error>
     func getMeal(by mealId: String) -> AnyPublisher<MealEntity, Error>
-    //    func getFavoriteMeals() -> AnyPublisher<[MealEntity], Error>
+    func getFavoriteMeals() -> AnyPublisher<[MealEntity], Error>
 
     func addMeals(from meals: [MealEntity]) -> AnyPublisher<Bool, Error>
     func updateMeal(by mealId: String, meal: MealEntity) -> AnyPublisher<Bool, Error>
@@ -59,6 +59,21 @@ extension LocaleDataSource: LocaleDataSourceProtocol {
                     return
                 }
                 completion(.success(meal))
+            } else {
+                completion(.failure(DatabaseError.invalidInstance))
+            }
+        }.eraseToAnyPublisher()
+    }
+
+    func getFavoriteMeals() -> AnyPublisher<[MealEntity], Error> {
+        return Future<[MealEntity], Error> { completion in
+            if let realm = self.realm {
+                let meals = {
+                    realm.objects(MealEntity.self)
+                        .filter("favorite = \(true)")
+                        .sorted(byKeyPath: "title", ascending: true)
+                }()
+                completion(.success(meals.toArray(ofType: MealEntity.self)))
             } else {
                 completion(.failure(DatabaseError.invalidInstance))
             }

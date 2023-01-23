@@ -11,6 +11,7 @@ import Combine
 protocol MealRepositoryProtocol {
     func getMeals() -> AnyPublisher<[MealModel], Error>
     func getMeal(mealId: String) -> AnyPublisher<MealModel, Error>
+    func getFavoriteMeals() -> AnyPublisher<[MealModel], Error>
     func toggleFavoriteMeal(mealId: String) -> AnyPublisher<MealModel, Error>
 }
 
@@ -73,6 +74,12 @@ extension MealRepository: MealRepositoryProtocol {
                         .eraseToAnyPublisher()
                 }
             }.eraseToAnyPublisher()
+    }
+
+    func getFavoriteMeals() -> AnyPublisher<[MealModel], Error> {
+        return self.locale.getFavoriteMeals()
+            .map { MealMapper.mapMealEntitiesToDomains(input: $0) }
+            .eraseToAnyPublisher()
     }
 
     func toggleFavoriteMeal(mealId: String) -> AnyPublisher<MealModel, Error> {

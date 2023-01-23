@@ -41,6 +41,10 @@
 		D7D3F0BB297EFD6700D5283F /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3F0BA297EFD6700D5283F /* View+Ext.swift */; };
 		D7EFAD5E297F056400EF1E30 /* MealEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD5D297F056400EF1E30 /* MealEntity.swift */; };
 		D7EFAD60297F058B00EF1E30 /* LocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD5F297F058B00EF1E30 /* LocaleDataSource.swift */; };
+		D7EFAD65297F16B100EF1E30 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD64297F16B100EF1E30 /* FavoriteView.swift */; };
+		D7EFAD67297F16BE00EF1E30 /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD66297F16BE00EF1E30 /* FavoritePresenter.swift */; };
+		D7EFAD69297F16C500EF1E30 /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD68297F16C500EF1E30 /* FavoriteRouter.swift */; };
+		D7EFAD6B297F171600EF1E30 /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD6A297F171600EF1E30 /* FavoriteInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +78,10 @@
 		D7D3F0BA297EFD6700D5283F /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		D7EFAD5D297F056400EF1E30 /* MealEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealEntity.swift; sourceTree = "<group>"; };
 		D7EFAD5F297F058B00EF1E30 /* LocaleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleDataSource.swift; sourceTree = "<group>"; };
+		D7EFAD64297F16B100EF1E30 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		D7EFAD66297F16BE00EF1E30 /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
+		D7EFAD68297F16C500EF1E30 /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
+		D7EFAD6A297F171600EF1E30 /* FavoriteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +254,7 @@
 			children = (
 				D74B3FCB297E2B2A00B596D0 /* HomeInteractor.swift */,
 				D74B3FD6297E6D0300B596D0 /* DetailInteractor.swift */,
+				D7EFAD6A297F171600EF1E30 /* FavoriteInteractor.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -355,6 +364,9 @@
 		D7935D92297CF5B100FB5AB1 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				D7EFAD63297F169700EF1E30 /* View */,
+				D7EFAD62297F169200EF1E30 /* Presenter */,
+				D7EFAD61297F168B00EF1E30 /* Router */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -374,6 +386,30 @@
 				D7EFAD5D297F056400EF1E30 /* MealEntity.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		D7EFAD61297F168B00EF1E30 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D7EFAD68297F16C500EF1E30 /* FavoriteRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D7EFAD62297F169200EF1E30 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D7EFAD66297F16BE00EF1E30 /* FavoritePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D7EFAD63297F169700EF1E30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7EFAD64297F16B100EF1E30 /* FavoriteView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,12 +532,16 @@
 				D7935D80297CF2E500FB5AB1 /* ContentView.swift in Sources */,
 				D73C7C38297EBC6B00EC450A /* AppBackground.swift in Sources */,
 				D74B3FC2297D776A00B596D0 /* MealsResponse.swift in Sources */,
+				D7EFAD65297F16B100EF1E30 /* FavoriteView.swift in Sources */,
 				D74B3FBF297D76C400B596D0 /* RemoteDataSource.swift in Sources */,
 				D7714D69297D3E48004594ED /* HomePresenter.swift in Sources */,
 				D74B3FBD297D765300B596D0 /* MealModel.swift in Sources */,
+				D7EFAD69297F16C500EF1E30 /* FavoriteRouter.swift in Sources */,
 				D72C52D4297D395D001319BB /* TabItem.swift in Sources */,
 				D74B3FBB297D760400B596D0 /* MealRepository.swift in Sources */,
 				D74B3FD1297E3DB700B596D0 /* CustomEmptyView.swift in Sources */,
+				D7EFAD67297F16BE00EF1E30 /* FavoritePresenter.swift in Sources */,
+				D7EFAD6B297F171600EF1E30 /* FavoriteInteractor.swift in Sources */,
 				D74B3FD3297E3E4A00B596D0 /* MealRow.swift in Sources */,
 				D73C7C36297EB2D500EC450A /* Color+Ext.swift in Sources */,
 				D74B3FD7297E6D0300B596D0 /* DetailInteractor.swift in Sources */,

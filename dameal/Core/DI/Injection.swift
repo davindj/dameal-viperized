@@ -22,6 +22,9 @@ final class Injection: NSObject {
                 meal: meal
             )
         }
+        container.register(FavoriteUseCase.self) { r in
+            FavoriteInteractor(repository: r.resolve(MealRepositoryProtocol.self)!)
+        }
 
         return container
     }()
