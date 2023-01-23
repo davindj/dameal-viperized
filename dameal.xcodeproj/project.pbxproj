@@ -45,6 +45,8 @@
 		D7EFAD67297F16BE00EF1E30 /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD66297F16BE00EF1E30 /* FavoritePresenter.swift */; };
 		D7EFAD69297F16C500EF1E30 /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD68297F16C500EF1E30 /* FavoriteRouter.swift */; };
 		D7EFAD6B297F171600EF1E30 /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD6A297F171600EF1E30 /* FavoriteInteractor.swift */; };
+		D7EFAD6E297F1A4C00EF1E30 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD6D297F1A4C00EF1E30 /* AboutView.swift */; };
+		D7EFAD70297F1D4800EF1E30 /* LinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD6F297F1D4800EF1E30 /* LinkButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		D7EFAD66297F16BE00EF1E30 /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
 		D7EFAD68297F16C500EF1E30 /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
 		D7EFAD6A297F171600EF1E30 /* FavoriteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
+		D7EFAD6D297F1A4C00EF1E30 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		D7EFAD6F297F1D4800EF1E30 /* LinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,6 +361,7 @@
 		D7935D91297CF5A500FB5AB1 /* About */ = {
 			isa = PBXGroup;
 			children = (
+				D7EFAD6C297F1A4300EF1E30 /* View */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -408,6 +413,15 @@
 			isa = PBXGroup;
 			children = (
 				D7EFAD64297F16B100EF1E30 /* FavoriteView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7EFAD6C297F1A4300EF1E30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7EFAD6D297F1A4C00EF1E30 /* AboutView.swift */,
+				D7EFAD6F297F1D4800EF1E30 /* LinkButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -516,6 +530,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7EFAD6E297F1A4C00EF1E30 /* AboutView.swift in Sources */,
 				D72C52D0297D390B001319BB /* HomeView.swift in Sources */,
 				D74B3FCC297E2B2A00B596D0 /* HomeInteractor.swift in Sources */,
 				D74B3FC5297D795100B596D0 /* CustomError+Ext.swift in Sources */,
@@ -524,6 +539,7 @@
 				D74B3FB7297D472700B596D0 /* APIEndpoint.swift in Sources */,
 				D7714D67297D3D1F004594ED /* ActivityIndicator.swift in Sources */,
 				D7D3F0BB297EFD6700D5283F /* View+Ext.swift in Sources */,
+				D7EFAD70297F1D4800EF1E30 /* LinkButton.swift in Sources */,
 				D7714D6B297D3E82004594ED /* HomeRouter.swift in Sources */,
 				D7EFAD5E297F056400EF1E30 /* MealEntity.swift in Sources */,
 				D74B3FCA297E25B300B596D0 /* MealMapper.swift in Sources */,
@@ -678,11 +694,11 @@
 				DEVELOPMENT_TEAM = SNDZ43L8ZN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Dameal;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -708,11 +724,11 @@
 				DEVELOPMENT_TEAM = SNDZ43L8ZN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Dameal;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

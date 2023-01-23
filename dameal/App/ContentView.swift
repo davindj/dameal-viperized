@@ -24,9 +24,9 @@ struct ContentView: View {
                 TabItem(imageName: "heart", title: "Favorite")
             }
             NavigationView {
-                Text("About Page")
+                AboutView()
             }.tabItem {
-                TabItem(imageName: "person.crop.circle", title: "about")
+                TabItem(imageName: "person.crop.circle", title: "About")
             }
         }
     }
