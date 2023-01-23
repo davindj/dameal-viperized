@@ -12,6 +12,7 @@ struct HomeView: View {
 
     var body: some View {
         ZStack {
+            AppBackground()
             if presenter.isLoading {
                 loadingIndicator
             } else if presenter.isError {
@@ -62,7 +63,7 @@ extension HomeView {
             ) { meal in
                 ZStack {
                     self.presenter.linkBuilder(for: meal) {
-                        Text(meal.title)
+                        MealRow(meal: meal)
                     }.buttonStyle(PlainButtonStyle())
                 }.padding(8)
             }
