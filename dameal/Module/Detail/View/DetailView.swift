@@ -12,6 +12,7 @@ struct DetailView: View {
 
     var body: some View {
         ZStack {
+            AppBackground()
             if presenter.isLoading {
                 loadingIndicator
             } else if presenter.isError {
