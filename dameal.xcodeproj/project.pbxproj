@@ -38,6 +38,7 @@
 		D7935D82297CF2E700FB5AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7935D81297CF2E700FB5AB1 /* Assets.xcassets */; };
 		D7935D85297CF2E700FB5AB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7935D84297CF2E700FB5AB1 /* Preview Assets.xcassets */; };
 		D7D3F0BB297EFD6700D5283F /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3F0BA297EFD6700D5283F /* View+Ext.swift */; };
+		D7D77EAE29812DB000437C5D /* damealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D77EAD29812DB000437C5D /* damealTests.swift */; };
 		D7EFAD5E297F056400EF1E30 /* MealEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD5D297F056400EF1E30 /* MealEntity.swift */; };
 		D7EFAD60297F058B00EF1E30 /* LocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD5F297F058B00EF1E30 /* LocaleDataSource.swift */; };
 		D7EFAD65297F16B100EF1E30 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD64297F16B100EF1E30 /* FavoriteView.swift */; };
@@ -47,6 +48,16 @@
 		D7EFAD6E297F1A4C00EF1E30 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD6D297F1A4C00EF1E30 /* AboutView.swift */; };
 		D7EFAD70297F1D4800EF1E30 /* LinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD6F297F1D4800EF1E30 /* LinkButton.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7D77EAF29812DB000437C5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7935D72297CF2E500FB5AB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7935D79297CF2E500FB5AB1;
+			remoteInfo = dameal;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D72C52CF297D390B001319BB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -76,6 +87,8 @@
 		D7935D81297CF2E700FB5AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7935D84297CF2E700FB5AB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D7D3F0BA297EFD6700D5283F /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		D7D77EAB29812DB000437C5D /* damealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = damealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7D77EAD29812DB000437C5D /* damealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = damealTests.swift; sourceTree = "<group>"; };
 		D7EFAD5D297F056400EF1E30 /* MealEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealEntity.swift; sourceTree = "<group>"; };
 		D7EFAD5F297F058B00EF1E30 /* LocaleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleDataSource.swift; sourceTree = "<group>"; };
 		D7EFAD64297F16B100EF1E30 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
@@ -96,6 +109,13 @@
 				D74B3FB1297D461E00B596D0 /* RealmSwift in Frameworks */,
 				D74B3FAF297D461E00B596D0 /* Realm in Frameworks */,
 				D74B3FAC297D44CE00B596D0 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7D77EA829812DB000437C5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				D7935D7C297CF2E500FB5AB1 /* dameal */,
+				D7D77EAC29812DB000437C5D /* damealTests */,
 				D7935D7B297CF2E500FB5AB1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -265,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				D7935D7A297CF2E500FB5AB1 /* dameal.app */,
+				D7D77EAB29812DB000437C5D /* damealTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -365,6 +387,14 @@
 			path = Favorite;
 			sourceTree = "<group>";
 		};
+		D7D77EAC29812DB000437C5D /* damealTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7D77EAD29812DB000437C5D /* damealTests.swift */,
+			);
+			path = damealTests;
+			sourceTree = "<group>";
+		};
 		D7EFAD5B297F054700EF1E30 /* Locale */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,6 +473,24 @@
 			productReference = D7935D7A297CF2E500FB5AB1 /* dameal.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D7D77EAA29812DB000437C5D /* damealTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7D77EB329812DB000437C5D /* Build configuration list for PBXNativeTarget "damealTests" */;
+			buildPhases = (
+				D7D77EA729812DB000437C5D /* Sources */,
+				D7D77EA829812DB000437C5D /* Frameworks */,
+				D7D77EA929812DB000437C5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7D77EB029812DB000437C5D /* PBXTargetDependency */,
+			);
+			name = damealTests;
+			productName = damealTests;
+			productReference = D7D77EAB29812DB000437C5D /* damealTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -455,6 +503,10 @@
 				TargetAttributes = {
 					D7935D79297CF2E500FB5AB1 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					D7D77EAA29812DB000437C5D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D7935D79297CF2E500FB5AB1;
 					};
 				};
 			};
@@ -478,6 +530,7 @@
 			projectRoot = "";
 			targets = (
 				D7935D79297CF2E500FB5AB1 /* dameal */,
+				D7D77EAA29812DB000437C5D /* damealTests */,
 			);
 		};
 /* End PBXProject section */
@@ -489,6 +542,13 @@
 			files = (
 				D7935D85297CF2E700FB5AB1 /* Preview Assets.xcassets in Resources */,
 				D7935D82297CF2E700FB5AB1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7D77EA929812DB000437C5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,7 +614,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D7D77EA729812DB000437C5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D77EAE29812DB000437C5D /* damealTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7D77EB029812DB000437C5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7935D79297CF2E500FB5AB1 /* dameal */;
+			targetProxy = D7D77EAF29812DB000437C5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D7935D86297CF2E700FB5AB1 /* Debug */ = {
@@ -731,6 +807,50 @@
 			};
 			name = Release;
 		};
+		D7D77EB129812DB000437C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SNDZ43L8ZN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vynncode.damealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dameal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dameal";
+			};
+			name = Debug;
+		};
+		D7D77EB229812DB000437C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SNDZ43L8ZN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vynncode.damealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dameal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dameal";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -748,6 +868,15 @@
 			buildConfigurations = (
 				D7935D89297CF2E700FB5AB1 /* Debug */,
 				D7935D8A297CF2E700FB5AB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7D77EB329812DB000437C5D /* Build configuration list for PBXNativeTarget "damealTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7D77EB129812DB000437C5D /* Debug */,
+				D7D77EB229812DB000437C5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
