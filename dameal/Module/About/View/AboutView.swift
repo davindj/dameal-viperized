@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DamealCore
 
 struct AboutView: View {
     var body: some View {

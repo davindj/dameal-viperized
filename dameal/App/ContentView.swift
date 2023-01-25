@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DamealCore
 
 struct ContentView: View {
     @EnvironmentObject var homePresenter: HomePresenter

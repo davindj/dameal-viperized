@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+import DamealCore
 
 struct MealRow: View {
     var meal: MealModel

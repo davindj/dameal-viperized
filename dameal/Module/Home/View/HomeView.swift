@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DamealCore
 
 struct HomeView: View {
     @ObservedObject var presenter: HomePresenter

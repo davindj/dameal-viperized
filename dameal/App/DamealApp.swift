@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DamealCore
 
 @main
 struct DamealApp: App {

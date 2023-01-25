@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DamealCore
 
 class HomeRouter {
     func makeDetailView(for meal: MealModel) -> some View {

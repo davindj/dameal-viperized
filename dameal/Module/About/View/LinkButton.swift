@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DamealCore
 
 struct LinkButton: View {
     var title: String

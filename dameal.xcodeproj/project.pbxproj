@@ -7,28 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E7821DC7AA0F98C26945691 /* Pods_dameal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 902C4E8A1AD877208AE6CC3D /* Pods_dameal.framework */; };
+		B6A964ED3B6B3431DF479E27 /* libPods-damealTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC4B40A708491CDE2CB00C1 /* libPods-damealTests.a */; };
 		D72C52D0297D390B001319BB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72C52CF297D390B001319BB /* HomeView.swift */; };
-		D72C52D4297D395D001319BB /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72C52D3297D395D001319BB /* TabItem.swift */; };
-		D73C7C36297EB2D500EC450A /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73C7C35297EB2D500EC450A /* Color+Ext.swift */; };
-		D73C7C38297EBC6B00EC450A /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73C7C37297EBC6B00EC450A /* AppBackground.swift */; };
 		D74B3FAC297D44CE00B596D0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D74B3FAB297D44CE00B596D0 /* Alamofire */; };
 		D74B3FAF297D461E00B596D0 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D74B3FAE297D461E00B596D0 /* Realm */; };
 		D74B3FB1297D461E00B596D0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D74B3FB0297D461E00B596D0 /* RealmSwift */; };
 		D74B3FB4297D468700B596D0 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D74B3FB3297D468700B596D0 /* SDWebImageSwiftUI */; };
-		D74B3FB7297D472700B596D0 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B3FB6297D472700B596D0 /* APIEndpoint.swift */; };
-		D74B3FBB297D760400B596D0 /* MealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B3FBA297D760400B596D0 /* MealRepository.swift */; };
-		D74B3FBD297D765300B596D0 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B3FBC297D765300B596D0 /* MealModel.swift */; };
-		D74B3FBF297D76C400B596D0 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B3FBE297D76C400B596D0 /* RemoteDataSource.swift */; };
-		D74B3FC2297D776A00B596D0 /* MealsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B3FC1297D776A00B596D0 /* MealsResponse.swift */; };
-		D74B3FC5297D795100B596D0 /* CustomError+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B3FC4297D795100B596D0 /* CustomError+Ext.swift */; };
-		D74B3FC7297D7D5D00B596D0 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B3FC6297D7D5D00B596D0 /* Injection.swift */; };
-		D74B3FCA297E25B300B596D0 /* MealMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B3FC9297E25B300B596D0 /* MealMapper.swift */; };
-		D74B3FCC297E2B2A00B596D0 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B3FCB297E2B2A00B596D0 /* HomeInteractor.swift */; };
 		D74B3FCF297E2F8300B596D0 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = D74B3FCE297E2F8300B596D0 /* Swinject */; };
-		D74B3FD1297E3DB700B596D0 /* CustomEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B3FD0297E3DB700B596D0 /* CustomEmptyView.swift */; };
 		D74B3FD3297E3E4A00B596D0 /* MealRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B3FD2297E3E4A00B596D0 /* MealRow.swift */; };
-		D74B3FD7297E6D0300B596D0 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B3FD6297E6D0300B596D0 /* DetailInteractor.swift */; };
-		D7714D67297D3D1F004594ED /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7714D66297D3D1F004594ED /* ActivityIndicator.swift */; };
 		D7714D69297D3E48004594ED /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7714D68297D3E48004594ED /* HomePresenter.swift */; };
 		D7714D6B297D3E82004594ED /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7714D6A297D3E82004594ED /* HomeRouter.swift */; };
 		D7714D6D297D3E91004594ED /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7714D6C297D3E91004594ED /* DetailView.swift */; };
@@ -37,14 +24,10 @@
 		D7935D80297CF2E500FB5AB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7935D7F297CF2E500FB5AB1 /* ContentView.swift */; };
 		D7935D82297CF2E700FB5AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7935D81297CF2E700FB5AB1 /* Assets.xcassets */; };
 		D7935D85297CF2E700FB5AB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7935D84297CF2E700FB5AB1 /* Preview Assets.xcassets */; };
-		D7D3F0BB297EFD6700D5283F /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3F0BA297EFD6700D5283F /* View+Ext.swift */; };
 		D7D77EAE29812DB000437C5D /* damealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D77EAD29812DB000437C5D /* damealTests.swift */; };
-		D7EFAD5E297F056400EF1E30 /* MealEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD5D297F056400EF1E30 /* MealEntity.swift */; };
-		D7EFAD60297F058B00EF1E30 /* LocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD5F297F058B00EF1E30 /* LocaleDataSource.swift */; };
 		D7EFAD65297F16B100EF1E30 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD64297F16B100EF1E30 /* FavoriteView.swift */; };
 		D7EFAD67297F16BE00EF1E30 /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD66297F16BE00EF1E30 /* FavoritePresenter.swift */; };
 		D7EFAD69297F16C500EF1E30 /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD68297F16C500EF1E30 /* FavoriteRouter.swift */; };
-		D7EFAD6B297F171600EF1E30 /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD6A297F171600EF1E30 /* FavoriteInteractor.swift */; };
 		D7EFAD6E297F1A4C00EF1E30 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD6D297F1A4C00EF1E30 /* AboutView.swift */; };
 		D7EFAD70297F1D4800EF1E30 /* LinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD6F297F1D4800EF1E30 /* LinkButton.swift */; };
 /* End PBXBuildFile section */
@@ -60,23 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FC4B40A708491CDE2CB00C1 /* libPods-damealTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-damealTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25725AC4DD175D184CB94E7E /* Pods-damealTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-damealTests.release.xcconfig"; path = "Target Support Files/Pods-damealTests/Pods-damealTests.release.xcconfig"; sourceTree = "<group>"; };
+		902C4E8A1AD877208AE6CC3D /* Pods_dameal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dameal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DCE95EC3F2D99E34E5C0D09 /* Pods-dameal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dameal.debug.xcconfig"; path = "Target Support Files/Pods-dameal/Pods-dameal.debug.xcconfig"; sourceTree = "<group>"; };
+		D38200B9B46B39774D9D3325 /* Pods-dameal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dameal.release.xcconfig"; path = "Target Support Files/Pods-dameal/Pods-dameal.release.xcconfig"; sourceTree = "<group>"; };
 		D72C52CF297D390B001319BB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		D72C52D3297D395D001319BB /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
-		D73C7C35297EB2D500EC450A /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
-		D73C7C37297EBC6B00EC450A /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
-		D74B3FB6297D472700B596D0 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
-		D74B3FBA297D760400B596D0 /* MealRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRepository.swift; sourceTree = "<group>"; };
-		D74B3FBC297D765300B596D0 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
-		D74B3FBE297D76C400B596D0 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
-		D74B3FC1297D776A00B596D0 /* MealsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsResponse.swift; sourceTree = "<group>"; };
-		D74B3FC4297D795100B596D0 /* CustomError+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomError+Ext.swift"; sourceTree = "<group>"; };
-		D74B3FC6297D7D5D00B596D0 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
-		D74B3FC9297E25B300B596D0 /* MealMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMapper.swift; sourceTree = "<group>"; };
-		D74B3FCB297E2B2A00B596D0 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		D74B3FD0297E3DB700B596D0 /* CustomEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEmptyView.swift; sourceTree = "<group>"; };
 		D74B3FD2297E3E4A00B596D0 /* MealRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRow.swift; sourceTree = "<group>"; };
-		D74B3FD6297E6D0300B596D0 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
-		D7714D66297D3D1F004594ED /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		D7714D68297D3E48004594ED /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		D7714D6A297D3E82004594ED /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		D7714D6C297D3E91004594ED /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -86,17 +59,14 @@
 		D7935D7F297CF2E500FB5AB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D7935D81297CF2E700FB5AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7935D84297CF2E700FB5AB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D7D3F0BA297EFD6700D5283F /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		D7D77EAB29812DB000437C5D /* damealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = damealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D77EAD29812DB000437C5D /* damealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = damealTests.swift; sourceTree = "<group>"; };
-		D7EFAD5D297F056400EF1E30 /* MealEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealEntity.swift; sourceTree = "<group>"; };
-		D7EFAD5F297F058B00EF1E30 /* LocaleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleDataSource.swift; sourceTree = "<group>"; };
 		D7EFAD64297F16B100EF1E30 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		D7EFAD66297F16BE00EF1E30 /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
 		D7EFAD68297F16C500EF1E30 /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
-		D7EFAD6A297F171600EF1E30 /* FavoriteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
 		D7EFAD6D297F1A4C00EF1E30 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D7EFAD6F297F1D4800EF1E30 /* LinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkButton.swift; sourceTree = "<group>"; };
+		EE8B6E20B6DE2A3AD5ADA385 /* Pods-damealTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-damealTests.debug.xcconfig"; path = "Target Support Files/Pods-damealTests/Pods-damealTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +79,7 @@
 				D74B3FB1297D461E00B596D0 /* RealmSwift in Frameworks */,
 				D74B3FAF297D461E00B596D0 /* Realm in Frameworks */,
 				D74B3FAC297D44CE00B596D0 /* Alamofire in Frameworks */,
+				0E7821DC7AA0F98C26945691 /* Pods_dameal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,12 +87,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A964ED3B6B3431DF479E27 /* libPods-damealTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6324BF934CC0EA7BACEBA6B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				902C4E8A1AD877208AE6CC3D /* Pods_dameal.framework */,
+				1FC4B40A708491CDE2CB00C1 /* libPods-damealTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A369AB0CCB89E50C634D4D92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DCE95EC3F2D99E34E5C0D09 /* Pods-dameal.debug.xcconfig */,
+				D38200B9B46B39774D9D3325 /* Pods-dameal.release.xcconfig */,
+				EE8B6E20B6DE2A3AD5ADA385 /* Pods-damealTests.debug.xcconfig */,
+				25725AC4DD175D184CB94E7E /* Pods-damealTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D72C52CC297D387D001319BB /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,71 +139,6 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		D72C52D1297D3917001319BB /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				D74B3FB5297D46D000B596D0 /* Network */,
-				D74B3FC8297E25A300B596D0 /* Mapper */,
-				D74B3FC3297D792200B596D0 /* Extensions */,
-				D72C52D2297D393C001319BB /* View */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		D72C52D2297D393C001319BB /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D72C52D3297D395D001319BB /* TabItem.swift */,
-				D7714D66297D3D1F004594ED /* ActivityIndicator.swift */,
-				D74B3FD0297E3DB700B596D0 /* CustomEmptyView.swift */,
-				D73C7C37297EBC6B00EC450A /* AppBackground.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D74B3FB5297D46D000B596D0 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				D74B3FB6297D472700B596D0 /* APIEndpoint.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		D74B3FB9297D758D00B596D0 /* Remote */ = {
-			isa = PBXGroup;
-			children = (
-				D74B3FC0297D770900B596D0 /* Response */,
-				D74B3FBE297D76C400B596D0 /* RemoteDataSource.swift */,
-			);
-			path = Remote;
-			sourceTree = "<group>";
-		};
-		D74B3FC0297D770900B596D0 /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				D74B3FC1297D776A00B596D0 /* MealsResponse.swift */,
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
-		D74B3FC3297D792200B596D0 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				D74B3FC4297D795100B596D0 /* CustomError+Ext.swift */,
-				D73C7C35297EB2D500EC450A /* Color+Ext.swift */,
-				D7D3F0BA297EFD6700D5283F /* View+Ext.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		D74B3FC8297E25A300B596D0 /* Mapper */ = {
-			isa = PBXGroup;
-			children = (
-				D74B3FC9297E25B300B596D0 /* MealMapper.swift */,
-			);
-			path = Mapper;
-			sourceTree = "<group>";
-		};
 		D7714D73297D3EA8004594ED /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,57 +155,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		D7714D75297D3EF8004594ED /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				D7714D78297D3F11004594ED /* Model */,
-				D7714D79297D3F16004594ED /* UseCase */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		D7714D76297D3EFD004594ED /* DI */ = {
-			isa = PBXGroup;
-			children = (
-				D74B3FC6297D7D5D00B596D0 /* Injection.swift */,
-			);
-			path = DI;
-			sourceTree = "<group>";
-		};
-		D7714D77297D3F04004594ED /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				D7EFAD5B297F054700EF1E30 /* Locale */,
-				D74B3FB9297D758D00B596D0 /* Remote */,
-				D74B3FBA297D760400B596D0 /* MealRepository.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		D7714D78297D3F11004594ED /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D74B3FBC297D765300B596D0 /* MealModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D7714D79297D3F16004594ED /* UseCase */ = {
-			isa = PBXGroup;
-			children = (
-				D74B3FCB297E2B2A00B596D0 /* HomeInteractor.swift */,
-				D74B3FD6297E6D0300B596D0 /* DetailInteractor.swift */,
-				D7EFAD6A297F171600EF1E30 /* FavoriteInteractor.swift */,
-			);
-			path = UseCase;
-			sourceTree = "<group>";
-		};
 		D7935D71297CF2E500FB5AB1 = {
 			isa = PBXGroup;
 			children = (
 				D7935D7C297CF2E500FB5AB1 /* dameal */,
 				D7D77EAC29812DB000437C5D /* damealTests */,
 				D7935D7B297CF2E500FB5AB1 /* Products */,
+				A369AB0CCB89E50C634D4D92 /* Pods */,
+				6324BF934CC0EA7BACEBA6B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				D7935D8C297CF38C00FB5AB1 /* App */,
-				D7935D8D297CF39200FB5AB1 /* Core */,
 				D7935D8E297CF39A00FB5AB1 /* Module */,
 				D7935D8B297CF37600FB5AB1 /* Supporting Files */,
 				D7935D83297CF2E700FB5AB1 /* Preview Content */,
@@ -326,17 +209,6 @@
 				D7935D7F297CF2E500FB5AB1 /* ContentView.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		D7935D8D297CF39200FB5AB1 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				D7714D77297D3F04004594ED /* Data */,
-				D7714D76297D3EFD004594ED /* DI */,
-				D7714D75297D3EF8004594ED /* Domain */,
-				D72C52D1297D3917001319BB /* Utils */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		D7935D8E297CF39A00FB5AB1 /* Module */ = {
@@ -395,23 +267,6 @@
 			path = damealTests;
 			sourceTree = "<group>";
 		};
-		D7EFAD5B297F054700EF1E30 /* Locale */ = {
-			isa = PBXGroup;
-			children = (
-				D7EFAD5C297F055800EF1E30 /* Entity */,
-				D7EFAD5F297F058B00EF1E30 /* LocaleDataSource.swift */,
-			);
-			path = Locale;
-			sourceTree = "<group>";
-		};
-		D7EFAD5C297F055800EF1E30 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				D7EFAD5D297F056400EF1E30 /* MealEntity.swift */,
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
 		D7EFAD61297F168B00EF1E30 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,10 +307,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7935D88297CF2E700FB5AB1 /* Build configuration list for PBXNativeTarget "dameal" */;
 			buildPhases = (
+				33F3893629AACEBE73F3DE51 /* [CP] Check Pods Manifest.lock */,
 				D7935D76297CF2E500FB5AB1 /* Sources */,
 				D7935D77297CF2E500FB5AB1 /* Frameworks */,
 				D7935D78297CF2E500FB5AB1 /* Resources */,
 				D7714D65297D39FD004594ED /* ShellScript */,
+				D3418B4815B987DFCBB23D5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -477,6 +334,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7D77EB329812DB000437C5D /* Build configuration list for PBXNativeTarget "damealTests" */;
 			buildPhases = (
+				A750DC7DF948F9A53F2B0BC0 /* [CP] Check Pods Manifest.lock */,
 				D7D77EA729812DB000437C5D /* Sources */,
 				D7D77EA829812DB000437C5D /* Frameworks */,
 				D7D77EA929812DB000437C5D /* Resources */,
@@ -555,6 +413,67 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		33F3893629AACEBE73F3DE51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dameal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A750DC7DF948F9A53F2B0BC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-damealTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3418B4815B987DFCBB23D5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dameal/Pods-dameal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dameal/Pods-dameal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dameal/Pods-dameal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D7714D65297D39FD004594ED /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -581,35 +500,16 @@
 			files = (
 				D7EFAD6E297F1A4C00EF1E30 /* AboutView.swift in Sources */,
 				D72C52D0297D390B001319BB /* HomeView.swift in Sources */,
-				D74B3FCC297E2B2A00B596D0 /* HomeInteractor.swift in Sources */,
-				D74B3FC5297D795100B596D0 /* CustomError+Ext.swift in Sources */,
 				D7714D6D297D3E91004594ED /* DetailView.swift in Sources */,
 				D7714D6F297D3E98004594ED /* DetailPresenter.swift in Sources */,
-				D74B3FB7297D472700B596D0 /* APIEndpoint.swift in Sources */,
-				D7714D67297D3D1F004594ED /* ActivityIndicator.swift in Sources */,
-				D7D3F0BB297EFD6700D5283F /* View+Ext.swift in Sources */,
 				D7EFAD70297F1D4800EF1E30 /* LinkButton.swift in Sources */,
 				D7714D6B297D3E82004594ED /* HomeRouter.swift in Sources */,
-				D7EFAD5E297F056400EF1E30 /* MealEntity.swift in Sources */,
-				D74B3FCA297E25B300B596D0 /* MealMapper.swift in Sources */,
-				D7EFAD60297F058B00EF1E30 /* LocaleDataSource.swift in Sources */,
 				D7935D80297CF2E500FB5AB1 /* ContentView.swift in Sources */,
-				D73C7C38297EBC6B00EC450A /* AppBackground.swift in Sources */,
-				D74B3FC2297D776A00B596D0 /* MealsResponse.swift in Sources */,
 				D7EFAD65297F16B100EF1E30 /* FavoriteView.swift in Sources */,
-				D74B3FBF297D76C400B596D0 /* RemoteDataSource.swift in Sources */,
 				D7714D69297D3E48004594ED /* HomePresenter.swift in Sources */,
-				D74B3FBD297D765300B596D0 /* MealModel.swift in Sources */,
 				D7EFAD69297F16C500EF1E30 /* FavoriteRouter.swift in Sources */,
-				D72C52D4297D395D001319BB /* TabItem.swift in Sources */,
-				D74B3FBB297D760400B596D0 /* MealRepository.swift in Sources */,
-				D74B3FD1297E3DB700B596D0 /* CustomEmptyView.swift in Sources */,
 				D7EFAD67297F16BE00EF1E30 /* FavoritePresenter.swift in Sources */,
-				D7EFAD6B297F171600EF1E30 /* FavoriteInteractor.swift in Sources */,
 				D74B3FD3297E3E4A00B596D0 /* MealRow.swift in Sources */,
-				D73C7C36297EB2D500EC450A /* Color+Ext.swift in Sources */,
-				D74B3FD7297E6D0300B596D0 /* DetailInteractor.swift in Sources */,
-				D74B3FC7297D7D5D00B596D0 /* Injection.swift in Sources */,
 				D7935D7E297CF2E500FB5AB1 /* DamealApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -749,6 +649,7 @@
 		};
 		D7935D89297CF2E700FB5AB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DCE95EC3F2D99E34E5C0D09 /* Pods-dameal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -779,6 +680,7 @@
 		};
 		D7935D8A297CF2E700FB5AB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D38200B9B46B39774D9D3325 /* Pods-dameal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -809,6 +711,7 @@
 		};
 		D7D77EB129812DB000437C5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE8B6E20B6DE2A3AD5ADA385 /* Pods-damealTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -831,6 +734,7 @@
 		};
 		D7D77EB229812DB000437C5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25725AC4DD175D184CB94E7E /* Pods-damealTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

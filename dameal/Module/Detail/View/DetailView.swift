@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+import DamealCore
 
 struct DetailView: View {
     @ObservedObject var presenter: DetailPresenter
