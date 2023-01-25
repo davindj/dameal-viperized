@@ -9,7 +9,7 @@ import Foundation
 import Swinject
 
 final class Injection: NSObject {
-    static let sharedInstance: Container = {
+    private static let sharedInstance: Container = {
         let container = Container()
         container.register(MealRepositoryProtocol.self) { _ in MealRepository.sharedInstance }
 
@@ -28,4 +28,19 @@ final class Injection: NSObject {
 
         return container
     }()
+
+    static func provideHomeUseCase() -> HomeUseCase {
+        let homeUseCase = sharedInstance.resolve(HomeUseCase.self)!
+        return homeUseCase
+    }
+
+    static func provideFavoriteUseCase() -> FavoriteUseCase {
+        let favoriteUseCase = sharedInstance.resolve(FavoriteUseCase.self)!
+        return favoriteUseCase
+    }
+
+    static func provideDetailUseCase(meal: MealModel) -> DetailUseCase {
+        let detailUseCase = Injection.sharedInstance.resolve(DetailUseCase.self, argument: meal)!
+        return detailUseCase
+    }
 }

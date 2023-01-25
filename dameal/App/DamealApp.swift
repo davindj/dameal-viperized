@@ -10,13 +10,16 @@ import SwiftUI
 @main
 struct DamealApp: App {
     var body: some Scene {
-        WindowGroup {
+        let homeUseCase = Injection.provideHomeUseCase()
+        let favoriteUseCase = Injection.provideFavoriteUseCase()
+
+        return WindowGroup {
             ContentView()
                 .environmentObject(
-                    HomePresenter(homeUseCase: Injection.sharedInstance.resolve(HomeUseCase.self)!)
+                    HomePresenter(homeUseCase: homeUseCase)
                 )
                 .environmentObject(
-                    FavoritePresenter(favoriteUseCase: Injection.sharedInstance.resolve(FavoriteUseCase.self)!)
+                    FavoritePresenter(favoriteUseCase: favoriteUseCase)
                 )
         }
     }

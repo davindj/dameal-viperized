@@ -9,7 +9,7 @@ import SwiftUI
 
 class FavoriteRouter {
     func makeDetailView(for meal: MealModel) -> some View {
-        let detailUseCase = Injection.sharedInstance.resolve(DetailUseCase.self, argument: meal)!
+        let detailUseCase = Injection.provideDetailUseCase(meal: meal)
         let presenter = DetailPresenter(detailUseCase: detailUseCase)
         return DetailView(presenter: presenter)
     }

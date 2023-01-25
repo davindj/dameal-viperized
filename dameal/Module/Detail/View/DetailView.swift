@@ -163,7 +163,7 @@ struct DetailView_Previews: PreviewProvider {
             favorite: false
         )
 
-        let useCase = Injection.sharedInstance.resolve(DetailUseCase.self, argument: meal)!
+        let useCase = Injection.provideDetailUseCase(meal: meal)
         let presenter = DetailPresenter(detailUseCase: useCase)
 
         return DetailView(presenter: presenter)
