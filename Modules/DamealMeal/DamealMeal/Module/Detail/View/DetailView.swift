@@ -9,10 +9,14 @@ import SwiftUI
 import SDWebImageSwiftUI
 import DamealCore
 
-struct DetailView: View {
+public struct DetailView: View {
     @ObservedObject var presenter: DetailPresenter
 
-    var body: some View {
+    public init(presenter: DetailPresenter) {
+        self.presenter = presenter
+    }
+
+    public var body: some View {
         ZStack {
             if presenter.isLoading {
                 loadingIndicator

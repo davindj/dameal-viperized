@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13CF7E5C64755F12AACB60F4 /* Pods_DamealAbout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DB661B69EFC9C700B7327 /* Pods_DamealAbout_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		7646C4F732832CC61C22DA78 /* Pods_DamealMeal_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A122906A7990F405F491D60D /* Pods_DamealMeal_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03D6691547B666EDD4255E95 /* Pods-DamealAbout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DamealAbout_Example.release.xcconfig"; path = "Target Support Files/Pods-DamealAbout_Example/Pods-DamealAbout_Example.release.xcconfig"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* DamealAbout_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DamealAbout_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CA7005C0C884936694E947 /* Pods-DamealMeal_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DamealMeal_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DamealMeal_Tests/Pods-DamealMeal_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		12DB604DACA0139E2226CF0B /* Pods-DamealMeal_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DamealMeal_Example.debug.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-DamealMeal_Example/Pods-DamealMeal_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1AC78876EA68D76FCFDD97E6 /* Pods-DamealMeal_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DamealMeal_Example.release.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-DamealMeal_Example/Pods-DamealMeal_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4D274DA56E82FC12E9013F09 /* Pods_DamealMeal_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DamealMeal_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* DamealMeal_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DamealMeal_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6F013AECAD6F1F04CB42081A /* Pods_DamealAbout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DamealAbout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		941DB661B69EFC9C700B7327 /* Pods_DamealAbout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DamealAbout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9ACCDF238C6A9ED0B6E83E7E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		AC7A9412F0910CC2E10A7099 /* Pods-DamealAbout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DamealAbout_Example.debug.xcconfig"; path = "Target Support Files/Pods-DamealAbout_Example/Pods-DamealAbout_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		ACA06A7C8972DDFBE452200F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FA80ADDE51A8F12EFC7EDEC9 /* DamealAbout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DamealAbout.podspec; path = ../DamealAbout.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6AAB65242384F476FF40244E /* DamealMeal.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DamealMeal.podspec; path = ../DamealMeal.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7F96D681BFEDA1979FA3D92D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A122906A7990F405F491D60D /* Pods_DamealMeal_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DamealMeal_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4237800B3528C97E5295A3 /* Pods-DamealMeal_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DamealMeal_Tests.release.xcconfig"; path = "Target Support Files/Pods-DamealMeal_Tests/Pods-DamealMeal_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C7B71D6D6F5E7F3876E9EC6C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,33 +39,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13CF7E5C64755F12AACB60F4 /* Pods_DamealAbout_Example.framework in Frameworks */,
+				7646C4F732832CC61C22DA78 /* Pods_DamealMeal_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46A4CE2EAFF5456B998F7620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A122906A7990F405F491D60D /* Pods_DamealMeal_Example.framework */,
+				4D274DA56E82FC12E9013F09 /* Pods_DamealMeal_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for DamealAbout */,
+				607FACD21AFB9204008FA782 /* Example for DamealMeal */,
 				607FACD11AFB9204008FA782 /* Products */,
-				E6AE41246DB7A1BC5E93154A /* Frameworks */,
-				CE93F0D657CE2C7DE7B1F9AA /* Pods */,
+				B8E763CAA61227963D4A5947 /* Pods */,
+				46A4CE2EAFF5456B998F7620 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* DamealAbout_Example.app */,
+				607FACD01AFB9204008FA782 /* DamealMeal_Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for DamealAbout */ = {
+		607FACD21AFB9204008FA782 /* Example for DamealMeal */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -73,8 +84,8 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for DamealAbout";
-			path = DamealAbout;
+			name = "Example for DamealMeal";
+			path = DamealMeal;
 			sourceTree = "<group>";
 		};
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
@@ -88,52 +99,44 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				FA80ADDE51A8F12EFC7EDEC9 /* DamealAbout.podspec */,
-				ACA06A7C8972DDFBE452200F /* README.md */,
-				9ACCDF238C6A9ED0B6E83E7E /* LICENSE */,
+				6AAB65242384F476FF40244E /* DamealMeal.podspec */,
+				C7B71D6D6F5E7F3876E9EC6C /* README.md */,
+				7F96D681BFEDA1979FA3D92D /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		CE93F0D657CE2C7DE7B1F9AA /* Pods */ = {
+		B8E763CAA61227963D4A5947 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AC7A9412F0910CC2E10A7099 /* Pods-DamealAbout_Example.debug.xcconfig */,
-				03D6691547B666EDD4255E95 /* Pods-DamealAbout_Example.release.xcconfig */,
+				12DB604DACA0139E2226CF0B /* Pods-DamealMeal_Example.debug.xcconfig */,
+				1AC78876EA68D76FCFDD97E6 /* Pods-DamealMeal_Example.release.xcconfig */,
+				05CA7005C0C884936694E947 /* Pods-DamealMeal_Tests.debug.xcconfig */,
+				AD4237800B3528C97E5295A3 /* Pods-DamealMeal_Tests.release.xcconfig */,
 			);
-			name = Pods;
-			path = ../../../Pods;
-			sourceTree = "<group>";
-		};
-		E6AE41246DB7A1BC5E93154A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				941DB661B69EFC9C700B7327 /* Pods_DamealAbout_Example.framework */,
-				6F013AECAD6F1F04CB42081A /* Pods_DamealAbout_Tests.framework */,
-			);
-			name = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* DamealAbout_Example */ = {
+		607FACCF1AFB9204008FA782 /* DamealMeal_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DamealAbout_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DamealMeal_Example" */;
 			buildPhases = (
-				104FE5184E544CCEA684D5DF /* [CP] Check Pods Manifest.lock */,
+				FB077B18404D7842991EC549 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				F9486BF06F4D358A24FF7BCF /* [CP] Embed Pods Frameworks */,
+				BF8485B47894532852CA4BB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DamealAbout_Example;
-			productName = DamealAbout;
-			productReference = 607FACD01AFB9204008FA782 /* DamealAbout_Example.app */;
+			name = DamealMeal_Example;
+			productName = DamealMeal;
+			productReference = 607FACD01AFB9204008FA782 /* DamealMeal_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "DamealAbout" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "DamealMeal" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -166,7 +169,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* DamealAbout_Example */,
+				607FACCF1AFB9204008FA782 /* DamealMeal_Example */,
 			);
 		};
 /* End PBXProject section */
@@ -185,7 +188,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		104FE5184E544CCEA684D5DF /* [CP] Check Pods Manifest.lock */ = {
+		BF8485B47894532852CA4BB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DamealMeal_Example/Pods-DamealMeal_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DamealCore/DamealCore.framework",
+				"${BUILT_PRODUCTS_DIR}/DamealMeal/DamealMeal.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI/SDWebImageSwiftUI.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DamealCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DamealMeal.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageSwiftUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DamealMeal_Example/Pods-DamealMeal_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB077B18404D7842991EC549 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,39 +235,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DamealAbout_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DamealMeal_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F9486BF06F4D358A24FF7BCF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DamealAbout_Example/Pods-DamealAbout_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/DamealAbout/DamealAbout.framework",
-				"${BUILT_PRODUCTS_DIR}/DamealCore/DamealCore.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DamealAbout.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DamealCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DamealAbout_Example/Pods-DamealAbout_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -370,10 +377,10 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC7A9412F0910CC2E10A7099 /* Pods-DamealAbout_Example.debug.xcconfig */;
+			baseConfigurationReference = 12DB604DACA0139E2226CF0B /* Pods-DamealMeal_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = DamealAbout/Info.plist;
+				INFOPLIST_FILE = DamealMeal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -386,10 +393,10 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03D6691547B666EDD4255E95 /* Pods-DamealAbout_Example.release.xcconfig */;
+			baseConfigurationReference = 1AC78876EA68D76FCFDD97E6 /* Pods-DamealMeal_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = DamealAbout/Info.plist;
+				INFOPLIST_FILE = DamealMeal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -403,7 +410,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "DamealAbout" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "DamealMeal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -412,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DamealAbout_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DamealMeal_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,

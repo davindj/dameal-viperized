@@ -8,10 +8,14 @@
 import SwiftUI
 import DamealCore
 
-struct HomeView: View {
+public struct HomeView: View {
     @ObservedObject var presenter: HomePresenter
 
-    var body: some View {
+    public init(presenter: HomePresenter) {
+        self.presenter = presenter
+    }
+
+    public var body: some View {
         ZStack {
             AppBackground()
             if presenter.isLoading {

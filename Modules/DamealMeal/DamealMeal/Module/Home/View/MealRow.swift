@@ -9,10 +9,14 @@ import SwiftUI
 import SDWebImageSwiftUI
 import DamealCore
 
-struct MealRow: View {
+public struct MealRow: View {
     var meal: MealModel
 
-    var body: some View {
+    public init(meal: MealModel) {
+        self.meal = meal
+    }
+
+    public var body: some View {
         HStack(alignment: .center) {
             WebImage(url: URL(string: meal.image))
                 .resizable()

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import DamealCore
+import DamealMeal
 
 @main
 struct DamealApp: App {

@@ -9,7 +9,7 @@ import Foundation
 import Combine
 import DamealCore
 
-class DetailPresenter: ObservableObject {
+public class DetailPresenter: ObservableObject {
     private var cancellables: Set<AnyCancellable> = []
     private let detailUseCase: DetailUseCase
 
@@ -18,12 +18,12 @@ class DetailPresenter: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var isError: Bool = false
 
-    init(detailUseCase: DetailUseCase) {
+    public init(detailUseCase: DetailUseCase) {
         self.detailUseCase = detailUseCase
         meal = detailUseCase.getMeal()
     }
 
-    func getMeal() {
+    public func getMeal() {
         isLoading = true
         detailUseCase.getMeal()
             .receive(on: RunLoop.main)
@@ -42,7 +42,7 @@ class DetailPresenter: ObservableObject {
             .store(in: &cancellables)
     }
 
-    func toggleFavoriteMeal() {
+    public func toggleFavoriteMeal() {
         detailUseCase.toggleFavoriteMeal()
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in

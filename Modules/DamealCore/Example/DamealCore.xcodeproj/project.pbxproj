@@ -24,8 +24,10 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		932276E1FC9EE018FE53EC18 /* Pods-DamealCore_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DamealCore_Example.release.xcconfig"; path = "Target Support Files/Pods-DamealCore_Example/Pods-DamealCore_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9B8BD6CA1848A4489043931E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9D82B22C96D278ED708A6D9B /* Pods_DamealCore_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DamealCore_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC005C260FF9A179F59399CF /* Pods-DamealCore_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DamealCore_Example.debug.xcconfig"; path = "Target Support Files/Pods-DamealCore_Example/Pods-DamealCore_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CCDDBA9F7DD9D0526FF753DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,6 +50,7 @@
 				607FACD21AFB9204008FA782 /* Example for DamealCore */,
 				607FACD11AFB9204008FA782 /* Products */,
 				8AB62BA67EC8729441BEEAF7 /* Frameworks */,
+				DB1CA789C93BDE903F4CF58E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +100,16 @@
 				9D82B22C96D278ED708A6D9B /* Pods_DamealCore_Example.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB1CA789C93BDE903F4CF58E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC005C260FF9A179F59399CF /* Pods-DamealCore_Example.debug.xcconfig */,
+				932276E1FC9EE018FE53EC18 /* Pods-DamealCore_Example.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +372,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC005C260FF9A179F59399CF /* Pods-DamealCore_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DamealCore/Info.plist;
@@ -374,6 +388,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 932276E1FC9EE018FE53EC18 /* Pods-DamealCore_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DamealCore/Info.plist;

@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 import DamealCore
 
-class HomePresenter: ObservableObject {
+public class HomePresenter: ObservableObject {
 
   private var cancellables: Set<AnyCancellable> = []
   private let router = HomeRouter()
@@ -20,11 +20,11 @@ class HomePresenter: ObservableObject {
   @Published var isLoading: Bool = false
   @Published var isError: Bool = false
 
-  init(homeUseCase: HomeUseCase) {
+  public init(homeUseCase: HomeUseCase) {
     self.homeUseCase = homeUseCase
   }
 
-  func getMeals() {
+  public func getMeals() {
     isLoading = true
     homeUseCase.getMeals()
       .receive(on: RunLoop.main)
@@ -43,7 +43,7 @@ class HomePresenter: ObservableObject {
       .store(in: &cancellables)
   }
 
-  func linkBuilder<Content: View>(
+  public func linkBuilder<Content: View>(
     for meal: MealModel,
     @ViewBuilder content: () -> Content
   ) -> some View {

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import DamealCore
+import DamealMeal
 
 struct FavoriteView: View {
     @ObservedObject var presenter: FavoritePresenter
