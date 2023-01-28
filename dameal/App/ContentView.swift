@@ -9,6 +9,7 @@ import SwiftUI
 import DamealCore
 import DamealMeal
 import DamealAbout
+import DamealFavorite
 
 struct ContentView: View {
     @EnvironmentObject var homePresenter: HomePresenter

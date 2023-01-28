@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 import DamealCore
 
-class FavoritePresenter: ObservableObject {
+public class FavoritePresenter: ObservableObject {
   private var cancellables: Set<AnyCancellable> = []
   private let router = FavoriteRouter()
   private let favoriteUseCase: FavoriteUseCase
@@ -19,11 +19,11 @@ class FavoritePresenter: ObservableObject {
   @Published var isLoading: Bool = false
   @Published var isError: Bool = false
 
-  init(favoriteUseCase: FavoriteUseCase) {
+  public init(favoriteUseCase: FavoriteUseCase) {
     self.favoriteUseCase = favoriteUseCase
   }
 
-  func getFavoriteMeals() {
+  public func getFavoriteMeals() {
     isLoading = true
     favoriteUseCase.getFavoriteMeals()
       .receive(on: RunLoop.main)
@@ -42,7 +42,7 @@ class FavoritePresenter: ObservableObject {
       .store(in: &cancellables)
   }
 
-  func linkBuilder<Content: View>(
+  public func linkBuilder<Content: View>(
     for meal: MealModel,
     @ViewBuilder content: () -> Content
   ) -> some View {

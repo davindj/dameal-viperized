@@ -9,10 +9,14 @@ import SwiftUI
 import DamealCore
 import DamealMeal
 
-struct FavoriteView: View {
+public struct FavoriteView: View {
     @ObservedObject var presenter: FavoritePresenter
 
-    var body: some View {
+    public init(presenter: FavoritePresenter) {
+        self.presenter = presenter
+    }
+
+    public var body: some View {
         ZStack {
             AppBackground()
             if presenter.isLoading {

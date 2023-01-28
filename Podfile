@@ -12,6 +12,10 @@ def damealmeal_pod
   pod 'DamealMeal', :path => 'Modules/DamealMeal'
 end
 
+def damealfavorite_pod
+  pod 'DamealFavorite', :path => 'Modules/DamealFavorite'
+end
+
 def damealabout_pod
   pod 'DamealAbout', :path => 'Modules/DamealAbout'
 end
@@ -19,6 +23,7 @@ end
 def development_pods
   damealcore_pod
   damealmeal_pod
+  damealfavorite_pod
   damealabout_pod
 end
 
@@ -48,6 +53,13 @@ target 'DamealMeal_Example' do
   project 'Modules/DamealMeal/Example/DamealMeal.xcodeproj'
   
   damealmeal_pod
+end 
+
+target 'DamealFavorite_Example' do
+  use_frameworks!
+  project 'Modules/DamealFavorite/Example/DamealFavorite.xcodeproj'
+  
+  damealfavorite_pod
 end 
 
 target 'DamealAbout_Example' do

@@ -16,4 +16,7 @@
    <FileRef
       location = "group:Modules/DamealMeal/Example/DamealMeal.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Modules/DamealFavorite/Example/DamealFavorite.xcodeproj">
+   </FileRef>
 </Workspace>
