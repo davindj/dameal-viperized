@@ -102,7 +102,7 @@
 				8732449787A288B9ABFE95F3 /* Pods-damealTests.debug.xcconfig */,
 				F2F079E24D2773FA86598125 /* Pods-damealTests.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		A7672234E0DFB11C2920D828 /* Frameworks */ = {
