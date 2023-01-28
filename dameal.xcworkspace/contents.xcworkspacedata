@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Modules/DamealCore/Example/DamealCore.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:dameal.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Modules/DamealCore/Example/DamealCore.xcodeproj">
    </FileRef>
 </Workspace>

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E7821DC7AA0F98C26945691 /* Pods_dameal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 902C4E8A1AD877208AE6CC3D /* Pods_dameal.framework */; };
-		B6A964ED3B6B3431DF479E27 /* libPods-damealTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC4B40A708491CDE2CB00C1 /* libPods-damealTests.a */; };
+		15C2ABA21929A46BA525C6E5 /* Pods_dameal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F984EC8B7F8B2FADA17349 /* Pods_dameal.framework */; };
+		57029D43D9CA3E288F6A52A0 /* libPods-damealTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D42CA34481198AAB3EB74FC6 /* libPods-damealTests.a */; };
 		D72C52D0297D390B001319BB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72C52CF297D390B001319BB /* HomeView.swift */; };
 		D74B3FAC297D44CE00B596D0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D74B3FAB297D44CE00B596D0 /* Alamofire */; };
 		D74B3FAF297D461E00B596D0 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D74B3FAE297D461E00B596D0 /* Realm */; };
@@ -43,11 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1FC4B40A708491CDE2CB00C1 /* libPods-damealTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-damealTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		25725AC4DD175D184CB94E7E /* Pods-damealTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-damealTests.release.xcconfig"; path = "Target Support Files/Pods-damealTests/Pods-damealTests.release.xcconfig"; sourceTree = "<group>"; };
-		902C4E8A1AD877208AE6CC3D /* Pods_dameal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dameal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DCE95EC3F2D99E34E5C0D09 /* Pods-dameal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dameal.debug.xcconfig"; path = "Target Support Files/Pods-dameal/Pods-dameal.debug.xcconfig"; sourceTree = "<group>"; };
-		D38200B9B46B39774D9D3325 /* Pods-dameal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dameal.release.xcconfig"; path = "Target Support Files/Pods-dameal/Pods-dameal.release.xcconfig"; sourceTree = "<group>"; };
+		40F070ED492C915B0A2E26D5 /* Pods-damealTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-damealTests.debug.xcconfig"; path = "Target Support Files/Pods-damealTests/Pods-damealTests.debug.xcconfig"; sourceTree = "<group>"; };
+		46DA6DA2190CEDEEB88BAF37 /* Pods-dameal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dameal.debug.xcconfig"; path = "Target Support Files/Pods-dameal/Pods-dameal.debug.xcconfig"; sourceTree = "<group>"; };
+		90F984EC8B7F8B2FADA17349 /* Pods_dameal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dameal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9711BB89A64EC4295AB30AB6 /* Pods-damealTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-damealTests.release.xcconfig"; path = "Target Support Files/Pods-damealTests/Pods-damealTests.release.xcconfig"; sourceTree = "<group>"; };
+		D42CA34481198AAB3EB74FC6 /* libPods-damealTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-damealTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72C52CF297D390B001319BB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D74B3FD2297E3E4A00B596D0 /* MealRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRow.swift; sourceTree = "<group>"; };
 		D7714D68297D3E48004594ED /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		D7EFAD68297F16C500EF1E30 /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
 		D7EFAD6D297F1A4C00EF1E30 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D7EFAD6F297F1D4800EF1E30 /* LinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkButton.swift; sourceTree = "<group>"; };
-		EE8B6E20B6DE2A3AD5ADA385 /* Pods-damealTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-damealTests.debug.xcconfig"; path = "Target Support Files/Pods-damealTests/Pods-damealTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDF12ED55B1E9D040C50AA2B /* Pods-dameal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dameal.release.xcconfig"; path = "Target Support Files/Pods-dameal/Pods-dameal.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 				D74B3FB1297D461E00B596D0 /* RealmSwift in Frameworks */,
 				D74B3FAF297D461E00B596D0 /* Realm in Frameworks */,
 				D74B3FAC297D44CE00B596D0 /* Alamofire in Frameworks */,
-				0E7821DC7AA0F98C26945691 /* Pods_dameal.framework in Frameworks */,
+				15C2ABA21929A46BA525C6E5 /* Pods_dameal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,31 +87,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A964ED3B6B3431DF479E27 /* libPods-damealTests.a in Frameworks */,
+				57029D43D9CA3E288F6A52A0 /* libPods-damealTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6324BF934CC0EA7BACEBA6B6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				902C4E8A1AD877208AE6CC3D /* Pods_dameal.framework */,
-				1FC4B40A708491CDE2CB00C1 /* libPods-damealTests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A369AB0CCB89E50C634D4D92 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9DCE95EC3F2D99E34E5C0D09 /* Pods-dameal.debug.xcconfig */,
-				D38200B9B46B39774D9D3325 /* Pods-dameal.release.xcconfig */,
-				EE8B6E20B6DE2A3AD5ADA385 /* Pods-damealTests.debug.xcconfig */,
-				25725AC4DD175D184CB94E7E /* Pods-damealTests.release.xcconfig */,
+				46DA6DA2190CEDEEB88BAF37 /* Pods-dameal.debug.xcconfig */,
+				EDF12ED55B1E9D040C50AA2B /* Pods-dameal.release.xcconfig */,
+				40F070ED492C915B0A2E26D5 /* Pods-damealTests.debug.xcconfig */,
+				9711BB89A64EC4295AB30AB6 /* Pods-damealTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC1ECCB5A87F292F7661F47C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90F984EC8B7F8B2FADA17349 /* Pods_dameal.framework */,
+				D42CA34481198AAB3EB74FC6 /* libPods-damealTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D72C52CC297D387D001319BB /* View */ = {
@@ -162,7 +162,7 @@
 				D7D77EAC29812DB000437C5D /* damealTests */,
 				D7935D7B297CF2E500FB5AB1 /* Products */,
 				A369AB0CCB89E50C634D4D92 /* Pods */,
-				6324BF934CC0EA7BACEBA6B6 /* Frameworks */,
+				CC1ECCB5A87F292F7661F47C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -307,12 +307,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7935D88297CF2E700FB5AB1 /* Build configuration list for PBXNativeTarget "dameal" */;
 			buildPhases = (
-				33F3893629AACEBE73F3DE51 /* [CP] Check Pods Manifest.lock */,
+				6047A8988BCB865F080AFC6D /* [CP] Check Pods Manifest.lock */,
 				D7935D76297CF2E500FB5AB1 /* Sources */,
 				D7935D77297CF2E500FB5AB1 /* Frameworks */,
 				D7935D78297CF2E500FB5AB1 /* Resources */,
 				D7714D65297D39FD004594ED /* ShellScript */,
-				D3418B4815B987DFCBB23D5A /* [CP] Embed Pods Frameworks */,
+				0D96663E8B2A5565BD5D0DDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,7 +334,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7D77EB329812DB000437C5D /* Build configuration list for PBXNativeTarget "damealTests" */;
 			buildPhases = (
-				A750DC7DF948F9A53F2B0BC0 /* [CP] Check Pods Manifest.lock */,
+				9E27FB3D322DFCC3FF62805D /* [CP] Check Pods Manifest.lock */,
 				D7D77EA729812DB000437C5D /* Sources */,
 				D7D77EA829812DB000437C5D /* Frameworks */,
 				D7D77EA929812DB000437C5D /* Resources */,
@@ -413,7 +413,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		33F3893629AACEBE73F3DE51 /* [CP] Check Pods Manifest.lock */ = {
+		0D96663E8B2A5565BD5D0DDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dameal/Pods-dameal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dameal/Pods-dameal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dameal/Pods-dameal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6047A8988BCB865F080AFC6D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -435,7 +452,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A750DC7DF948F9A53F2B0BC0 /* [CP] Check Pods Manifest.lock */ = {
+		9E27FB3D322DFCC3FF62805D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -455,23 +472,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D3418B4815B987DFCBB23D5A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-dameal/Pods-dameal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-dameal/Pods-dameal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dameal/Pods-dameal-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D7714D65297D39FD004594ED /* ShellScript */ = {
@@ -649,7 +649,7 @@
 		};
 		D7935D89297CF2E700FB5AB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DCE95EC3F2D99E34E5C0D09 /* Pods-dameal.debug.xcconfig */;
+			baseConfigurationReference = 46DA6DA2190CEDEEB88BAF37 /* Pods-dameal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -680,7 +680,7 @@
 		};
 		D7935D8A297CF2E700FB5AB1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D38200B9B46B39774D9D3325 /* Pods-dameal.release.xcconfig */;
+			baseConfigurationReference = EDF12ED55B1E9D040C50AA2B /* Pods-dameal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -711,7 +711,7 @@
 		};
 		D7D77EB129812DB000437C5D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE8B6E20B6DE2A3AD5ADA385 /* Pods-damealTests.debug.xcconfig */;
+			baseConfigurationReference = 40F070ED492C915B0A2E26D5 /* Pods-damealTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -734,7 +734,7 @@
 		};
 		D7D77EB229812DB000437C5D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25725AC4DD175D184CB94E7E /* Pods-damealTests.release.xcconfig */;
+			baseConfigurationReference = 9711BB89A64EC4295AB30AB6 /* Pods-damealTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
