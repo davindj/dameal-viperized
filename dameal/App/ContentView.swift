@@ -7,6 +7,7 @@
 
 import SwiftUI
 import DamealCore
+import DamealAbout
 
 struct ContentView: View {
     @EnvironmentObject var homePresenter: HomePresenter

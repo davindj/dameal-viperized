@@ -27,8 +27,6 @@
 		D7EFAD65297F16B100EF1E30 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD64297F16B100EF1E30 /* FavoriteView.swift */; };
 		D7EFAD67297F16BE00EF1E30 /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD66297F16BE00EF1E30 /* FavoritePresenter.swift */; };
 		D7EFAD69297F16C500EF1E30 /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD68297F16C500EF1E30 /* FavoriteRouter.swift */; };
-		D7EFAD6E297F1A4C00EF1E30 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD6D297F1A4C00EF1E30 /* AboutView.swift */; };
-		D7EFAD70297F1D4800EF1E30 /* LinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFAD6F297F1D4800EF1E30 /* LinkButton.swift */; };
 		E77DB2AA6C66A971B3B33B31 /* libPods-damealTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4141636EA6314BA70E32A3 /* libPods-damealTests.a */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +62,6 @@
 		D7EFAD64297F16B100EF1E30 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		D7EFAD66297F16BE00EF1E30 /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
 		D7EFAD68297F16C500EF1E30 /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
-		D7EFAD6D297F1A4C00EF1E30 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		D7EFAD6F297F1D4800EF1E30 /* LinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkButton.swift; sourceTree = "<group>"; };
 		F2F079E24D2773FA86598125 /* Pods-damealTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-damealTests.release.xcconfig"; path = "Target Support Files/Pods-damealTests/Pods-damealTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,7 +213,6 @@
 				D7935D8F297CF54800FB5AB1 /* Home */,
 				D7935D90297CF58D00FB5AB1 /* Detail */,
 				D7935D92297CF5B100FB5AB1 /* Favorite */,
-				D7935D91297CF5A500FB5AB1 /* About */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -239,14 +234,6 @@
 				D7714D73297D3EA8004594ED /* Presenter */,
 			);
 			path = Detail;
-			sourceTree = "<group>";
-		};
-		D7935D91297CF5A500FB5AB1 /* About */ = {
-			isa = PBXGroup;
-			children = (
-				D7EFAD6C297F1A4300EF1E30 /* View */,
-			);
-			path = About;
 			sourceTree = "<group>";
 		};
 		D7935D92297CF5B100FB5AB1 /* Favorite */ = {
@@ -287,15 +274,6 @@
 			isa = PBXGroup;
 			children = (
 				D7EFAD64297F16B100EF1E30 /* FavoriteView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D7EFAD6C297F1A4300EF1E30 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D7EFAD6D297F1A4C00EF1E30 /* AboutView.swift */,
-				D7EFAD6F297F1D4800EF1E30 /* LinkButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -498,11 +476,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7EFAD6E297F1A4C00EF1E30 /* AboutView.swift in Sources */,
 				D72C52D0297D390B001319BB /* HomeView.swift in Sources */,
 				D7714D6D297D3E91004594ED /* DetailView.swift in Sources */,
 				D7714D6F297D3E98004594ED /* DetailPresenter.swift in Sources */,
-				D7EFAD70297F1D4800EF1E30 /* LinkButton.swift in Sources */,
 				D7714D6B297D3E82004594ED /* HomeRouter.swift in Sources */,
 				D7935D80297CF2E500FB5AB1 /* ContentView.swift in Sources */,
 				D7EFAD65297F16B100EF1E30 /* FavoriteView.swift in Sources */,

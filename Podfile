@@ -8,8 +8,13 @@ def damealcore_pod
   pod 'DamealCore', :path => 'Modules/DamealCore'
 end
 
+def damealabout_pod
+  pod 'DamealAbout', :path => 'Modules/DamealAbout'
+end
+
 def development_pods
   damealcore_pod
+  damealabout_pod
 end
 
 target 'dameal' do
@@ -31,4 +36,12 @@ target 'DamealCore_Example' do
   project 'Modules/DamealCore/Example/DamealCore.xcodeproj'
   
   damealcore_pod
-end
+end 
+
+target 'DamealAbout_Example' do
+  use_frameworks!
+  project 'Modules/DamealAbout/Example/DamealAbout.xcodeproj'
+  
+  damealabout_pod
+end 
+

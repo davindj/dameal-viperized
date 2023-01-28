@@ -8,8 +8,9 @@
 import SwiftUI
 import DamealCore
 
-struct AboutView: View {
-    var body: some View {
+public struct AboutView: View {
+    public init() {}
+    public var body: some View {
         ZStack {
             AppBackground()
             content
